@@ -30,8 +30,8 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Tatsuya Daniel"
+					tagline="Physics PhD Candidate, Brown University, Providence, Rhode Island, USA"
 					align="start"
 				>
 					<div class="roles">
@@ -42,64 +42,32 @@ const projects = (await getCollection('work'))
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.jpg"
+					alt="Tatsuya Daniel headshot"
+					width="400"
+					height="750"
+					src="/assets/Tats_Daniel_Recent_Headshot_Copy2.jpg"
 				/>
 			</header>
-
-			<Skills />
 		</div>
-
+		<Skills />
+		
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Recent Publications</h3>
+					<p> T. Daniel, L. Jenks and S. Alexander, "Gravitational Waves in Chern-Simons-Gauss-Bonnet Gravity," <a href="https://doi.org/10.1103/PhysRevD.109.124012">10.1103/PhysRevD.109.124012</a>.</p>
+					<p> T. Daniel, M. Howard and M. König, "An SZ-Like Effect on Cosmological Gravitational Wave Backgrounds," <a href="https://doi.org/10.1088/1475-7516/2023/12/041">10.1088/1475-7516/2023/12/041</a>.</p>
 				</header>
 
-				<div class="gallery">
-					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-
 				<div class="cta">
-					<CallToAction href="/work/">
+					<CallToAction href="/publications/">
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
 
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
-					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
-				</div>
-			</section>
+			
 		</main>
 
 		<ContactCTA />

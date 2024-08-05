@@ -14,25 +14,23 @@ const projects = (await getCollection('work')).sort(
 ---
 
 <BaseLayout
-	title="My Work | Jeanine White"
-	description="Learn about Jeanine White's most recent projects"
+	title="Publications | Tatsuya Daniel"
+	description="Learn about Tatsuya Daniel's research"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="My Work"
-				tagline="See my most recent projects below to get an idea of my past experience."
+				title="Publications"
+				#tagline="See my most recent projects below to get an idea of my past experience."
 				align="start"
 			/>
-			<Grid variant="offset">
-				{
-					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
-						</li>
-					))
-				}
-			</Grid>
+			<p> T. Daniel, L. Jenks and S. Alexander, "Gravitational Waves in Chern-Simons-Gauss-Bonnet Gravity," <a href="https://doi.org/10.1103/PhysRevD.109.124012">10.1103/PhysRevD.109.124012</a> (2024).</p>
+			<p> T. Daniel, M. Howard and M. König, "An SZ-Like Effect on Cosmological Gravitational Wave Backgrounds," <a href="https://doi.org/10.1088/1475-7516/2023/12/041">10.1088/1475-7516/2023/12/041</a> (2023).</p>
+			<p> L. Burns, T. Daniel, S. Alexander and J. Dressel, "Spacetime geometry of acoustics and electromagnetism," <a href="https://doi.org/10.1007/s40509-024-00317-8">10.1007/s40509-024-00317-8</a> (2023).</p>
+			<p> S. Alexander, T. Daniel, M. Howard and M. König, "An Exact Fermionic Chern-Simons-Kodama State in Quantum Gravity," <a href="https://doi.org/10.1103/PhysRevD.106.106012">10.1103/PhysRevD.106.106012</a> (2022).</p>
+			<p> S. Alexander, T. Daniel and J. Magueijo, "The Ashtekar Variables and a Varying Cosmological Constant from Dynamical Chern-Simons Gravity," <a href="https://doi.org/10.48550/arXiv.2207.08885">10.48550/arXiv.2207.08885</a> (2022).</p>
+			<p> A. Chiti, A. Frebel, M. Mardini, T. Daniel, X. Ou and A. Uvarova, "Stellar Metallicities from SkyMapper Photometry. II. Precise Photometric Metallicities of &#8764 280,000 Giant Stars with [Fe/H] &#60 -0.75 in the Milky Way," <a href="https://doi.org/10.3847/1538-4365/abf73d">10.3847/1538-4365/abf73d</a> (2020).</p>
+			<p> A. Chiti, A. Frebel, M. Mardini and T. Daniel, "The Metal-poor Metallicity Distribution of the Ancient Milky Way," <a href="https://doi.org/10.3847/2041-8213/abd629">10.3847/2041-8213/abd629</a> (2020).</p>
 		</main>
 		<ContactCTA />
 	</div>
